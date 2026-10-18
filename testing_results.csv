@@ -1,0 +1,8 @@
+
+Test_No,Actual_Class,Predicted_Class,Model_Score,Result
+1,Bird-drop,Bird-drop,60.23%,Correct
+2,Physical-Damage,Electrical-damage,91.29%,Incorrect
+3,Dusty,Dusty,59.80%,Correct
+4,Clean,Clean,84.59%,Correct
+5,Snow-Covered,Snow-Covered,99.64%,Correct
+6,Physical-Damage,Physical-Damage,99.89%,Correct
