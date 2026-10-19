@@ -22,12 +22,28 @@ with open("class_names.json", "r") as file:
 # Select device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+# Download model from Google Drive if it is not available
+model_path = "solarguard_experiment2.pth"
+file_id = "1UbpkDQ-Vbu3NoNjNwW3oWvgW22G1nnem"
+
+if not os.path.exists(model_path):
+    with st.spinner("Downloading trained AI model..."):
+        gdown.download(
+            f"https://drive.google.com/uc?id={file_id}",
+            model_path,
+            quiet=False
+        )
+
+if not os.path.exists(model_path) or os.path.getsize(model_path) == 0:
+    st.error("Model download failed. Check Google Drive sharing permissions.")
+    st.stop()
+
 # Load trained model
 model = models.resnet18(weights=None)
 model.fc = nn.Linear(model.fc.in_features, len(class_names))
 
 model.load_state_dict(
-    torch.load("solarguard_experiment2.pth", map_location=device)
+    torch.load(model_path, map_location=device)
 )
 
 model = model.to(device)
