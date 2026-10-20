@@ -8,6 +8,21 @@ SolarGuard AI is a deep learning project that classifies solar panel images into
 
 [Try SolarGuard AI](https://solarguard-ai-rcyucvvpewvauew5zk4s6h.streamlit.app/)
 
+## 🖼️ App Screenshots
+
+### 1. SolarGuard AI — Prediction Result
+
+![Prediction Result](Screenshot%202026-10-20%20183823.png)
+
+### 2. SolarGuard AI — Screenshot 2
+
+![SolarGuard AI Screenshot 2](Screenshot%202026-10-20%20183838.png)
+
+### 3. SolarGuard AI — Screenshot 3
+
+![SolarGuard AI Screenshot 3](Screenshot%202026-10-20%20183847.png)
+
+
 ## 🎯 Project Objective
 
 The objective is to explore how computer vision can help identify different visible solar panel conditions from images.
