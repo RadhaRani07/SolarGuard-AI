@@ -94,3 +94,22 @@ SolarGuard AI was manually tested on six sample images.
 - These results represent a small sample and should not be confused with the full test-set accuracy.
 
 The model achieved **86.47% accuracy on the recorded 133-image test set** during model evaluation. Performance on new images may vary.
+
+
+## 💻 Run Locally
+
+### 1. Clone the repository
+
+git clone https://github.com/RadhaRani07/SolarGuard-AI.git
+
+### 2. Open the project folder
+
+cd SolarGuard-AI
+
+### 3. Install dependencies
+
+pip install -r requirements.txt
+
+### 4. Run the Streamlit app
+
+streamlit run app.py
