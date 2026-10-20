@@ -1,10 +1,19 @@
+# ☀️ SolarGuard AI
 
-# SolarGuard AI
+### AI-Based Solar Panel Condition Classification
 
-## Project Overview
-SolarGuard AI is an educational AI project that classifies solar panel images into six condition categories using a ResNet18 deep learning model.
+SolarGuard AI is a deep learning project that classifies solar panel images into six condition categories using a fine-tuned ResNet18 model. The project provides a simple web interface built with Streamlit.
 
-## Classes
+## 🚀 Live Demo
+
+[Try SolarGuard AI](https://solarguard-ai-rcyucvvpewvauew5zk4s6h.streamlit.app/)
+
+## 🎯 Project Objective
+
+The objective is to explore how computer vision can help identify different visible solar panel conditions from images.
+
+## 🔍 Supported Classes
+
 - Clean
 - Dusty
 - Bird-drop
@@ -12,29 +21,43 @@ SolarGuard AI is an educational AI project that classifies solar panel images in
 - Electrical-damage
 - Snow-Covered
 
-## Technology Used
+## 🛠️ Technologies Used
+
 - Python
 - PyTorch
-- ResNet18
+- Torchvision
+- ResNet18 Transfer Learning
 - Streamlit
 - Pillow
 
-## Model Evaluation
-The model achieved 86.47% accuracy on the held-out test dataset during the training experiment.
+## 📊 Model Performance
 
-External photo tests were also performed. Some predictions matched the expected class, while a cracked-panel image was incorrectly classified as Electrical-damage.
+- **Test Accuracy:** 86.47%
+- **Test Images:** 133
+- **Model:** Fine-tuned ResNet18
+- **Dataset Size:** 885 images
 
-## Limitations
-- This is an educational prototype, not an industrial inspection system.
-- Confidence scores are not guarantees of correctness.
-- Electrical damage cannot be reliably confirmed from an image alone.
-- More diverse and carefully labelled images are needed for further evaluation.
+These results are from the project's recorded test evaluation. Performance may vary on new images, and predictions should be treated as estimates.
 
-## How to Run
-1. Install the required Python packages.
-2. Keep app.py, class_names.json, and solarguard_experiment2.pth in the same folder.
-3. Run the application using:
-   streamlit run app.py
+## ⚙️ How to Use
 
-## Author
-Created as an AI/ML learning project.
+1. Open the live demo.
+2. Upload a solar panel image in JPG, JPEG, or PNG format.
+3. Click **Predict Condition**.
+4. Review the predicted class, confidence score, and class probabilities.
+
+## ⚠️ Limitations
+
+This is an educational AI prototype. Predictions are not a substitute for professional solar panel inspection. Image-based classification may not detect hidden cracks or internal electrical faults reliably.
+
+## 🔮 Future Improvements
+
+- Expand and improve the training dataset.
+- Evaluate performance on more real-world images.
+- Improve classification of damaged and dusty panels.
+- Enhance the user interface and model evaluation.
+
+## 👩‍💻 Project Status
+
+The model has been trained and evaluated, and a Streamlit web demo is deployed.
+
