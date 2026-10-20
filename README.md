@@ -76,3 +76,21 @@ This is an educational AI prototype. Predictions are not a substitute for profes
 
 The model has been trained and evaluated, and a Streamlit web demo is deployed.
 
+## 🧪 Sample Image Testing
+
+SolarGuard AI was manually tested on six sample images.
+
+| Metric | Result |
+|---|---:|
+| Sample images tested | 6 |
+| Correct predictions | 5 |
+| Incorrect predictions | 1 |
+| Sample accuracy | 83.33% |
+
+### Observations
+
+- Clean, Dusty, Bird-drop, and Snow-Covered examples were classified correctly in the recorded tests.
+- One Physical-Damage example was incorrectly classified as Electrical-damage.
+- These results represent a small sample and should not be confused with the full test-set accuracy.
+
+The model achieved **86.47% accuracy on the recorded 133-image test set** during model evaluation. Performance on new images may vary.
